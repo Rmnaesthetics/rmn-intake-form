@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RMN Aesthetic Studio - Forms</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Montserrat:wght@200;300;400;500&display=swap');
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #FAF6F0;
+            color: #332F2C;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .logo-main {
+            font-family: 'Cinzel', serif;
+            font-size: 48px;
+            font-weight: 500;
+            letter-spacing: 7px;
+            color: #E2C7BF;
+        }
+
+        .logo-sub {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+            letter-spacing: 5px;
+            color: #7A6B63;
+            margin-top: 10px;
+            text-transform: uppercase;
+        }
+
+        .tagline {
+            font-size: 14px;
+            color: #C5A059;
+            margin-top: 15px;
+            letter-spacing: 2px;
+        }
+
+        .forms-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .form-card {
+            background-color: #FFFFFF;
+            padding: 40px 30px;
+            border: 1px solid #F0E6DF;
+            border-radius: 4px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .form-card:hover {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transform: translateY(-5px);
+        }
+
+        .form-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .form-card h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 20px;
+            letter-spacing: 3px;
+            color: #5C4A42;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .form-card p {
+            font-size: 13px;
+            color: #8A7A71;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .form-link {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #C5A059;
+            color: #FFFFFF;
+            text-decoration: none;
+            border-radius: 3px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: background-color 0.3s;
+        }
+
+        .form-link:hover {
+            background-color: #B8944D;
+        }
+
+        .footer {
+            margin-top: 80px;
+            text-align: center;
+            color: #8A7A71;
+            font-size: 12px;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo-main">RMN</div>
+        <div class="logo-sub">Aesthetic Studio</div>
+        <div class="tagline">Radiance • Modern • Natural</div>
+    </div>
+
+    <div class="forms-container">
+        <div class="form-card">
+            <div class="form-icon">💆‍♀️</div>
+            <h2>Facial Intake</h2>
+            <p>Complete medical history and informed consent for facial treatments and procedures.</p>
+            <a href="facial-intake.html" class="form-link">Open Form</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 RMN Aesthetic Studio. All Rights Reserved.</p>
+    </div>
+
+</body>
+</html>
