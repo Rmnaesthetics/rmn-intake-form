@@ -13,17 +13,11 @@
             padding: 0;
         }
 
-        html, body {
-            width: 100%;
-            height: 100%;
-        }
-
         body {
             font-family: 'Montserrat', sans-serif;
             background-color: #f5f5f5;
             color: #332F2C;
-            margin: 0;
-            padding: 0;
+            padding: 20px;
         }
 
         .print-button {
@@ -48,15 +42,10 @@
 
         .print-button:hover {
             background-color: #B8944D;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
         }
 
         .pages-container {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            padding: 20px;
-            max-width: 1000px;
+            max-width: 8.5in;
             margin: 60px auto 20px;
         }
 
@@ -64,12 +53,11 @@
             background-color: #FFFFFF;
             width: 8.5in;
             height: 11in;
-            margin: 0 auto;
+            margin: 20px auto;
             display: flex;
             flex-direction: column;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             position: relative;
-            overflow: hidden;
         }
 
         .brand-header {
@@ -106,14 +94,14 @@
             letter-spacing: 3px;
             color: #FFFFFF;
             border-top: 1px solid #D4AF37;
-            margin-top: auto;
         }
 
         .form-content {
             padding: 30px;
             flex-grow: 1;
-            overflow-y: auto;
-            font-size: 13px;
+            font-size: 12px;
+            display: flex;
+            flex-direction: column;
         }
 
         .facial-tag {
@@ -141,7 +129,7 @@
         .section-divider {
             height: 1px;
             background-color: #EAE1DA;
-            margin: 15px 0;
+            margin: 12px 0;
             position: relative;
         }
 
@@ -160,8 +148,8 @@
         .input-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            column-gap: 30px;
-            row-gap: 12px;
+            column-gap: 25px;
+            row-gap: 10px;
             margin-bottom: 8px;
         }
 
@@ -175,12 +163,12 @@
         }
 
         .input-field label {
-            font-size: 10px;
+            font-size: 9px;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 1px;
             color: #7A6B63;
-            margin-bottom: 4px;
+            margin-bottom: 3px;
         }
 
         .line-input {
@@ -188,46 +176,42 @@
             border-bottom: 1px solid #D8CFC7;
             padding: 4px 0;
             font-family: 'Montserrat', sans-serif;
-            font-size: 12px;
+            font-size: 11px;
             color: #332F2C;
             background-color: transparent;
             outline: none;
-            min-height: 22px;
-        }
-
-        input.line-input {
-            padding: 6px 0;
+            min-height: 18px;
         }
 
         .section-title {
             font-family: 'Cinzel', serif;
-            font-size: 12px;
+            font-size: 11px;
             letter-spacing: 2px;
             color: #5C4A42;
-            margin-bottom: 4px;
-            margin-top: 10px;
+            margin-bottom: 3px;
+            margin-top: 8px;
             text-transform: uppercase;
         }
 
         .section-subtitle {
-            font-size: 10px;
+            font-size: 9px;
             font-style: italic;
             color: #8A7A71;
-            margin-bottom: 12px;
-            line-height: 1.4;
+            margin-bottom: 10px;
+            line-height: 1.3;
         }
 
         .matrix-container {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            gap: 8px;
-            margin-bottom: 15px;
+            gap: 6px;
+            margin-bottom: 10px;
         }
 
         .checkbox-item {
             display: flex;
             align-items: center;
-            font-size: 10px;
+            font-size: 9px;
             letter-spacing: 0.3px;
             color: #4A4440;
             text-transform: uppercase;
@@ -235,52 +219,52 @@
         }
 
         .checkbox-item input[type="checkbox"] {
-            width: 12px;
-            height: 12px;
-            margin-right: 6px;
+            width: 11px;
+            height: 11px;
+            margin-right: 5px;
             cursor: pointer;
             accent-color: #C5A059;
             flex-shrink: 0;
         }
 
         .text-block-field {
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
 
         .text-block-field label {
             display: block;
-            font-size: 10px;
+            font-size: 9px;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 1px;
             color: #7A6B63;
-            margin-bottom: 4px;
+            margin-bottom: 3px;
         }
 
         .block-input {
             width: 100%;
-            height: 30px;
+            height: 25px;
             border: none;
             border-bottom: 1px solid #C5A059;
             background-color: #FAF9F7;
             outline: none;
             font-family: 'Montserrat', sans-serif;
-            font-size: 12px;
+            font-size: 11px;
             color: #332F2C;
-            padding: 4px 0;
+            padding: 3px 0;
         }
 
         textarea.block-input {
-            height: 40px;
+            height: 32px;
             resize: none;
-            padding: 4px;
+            padding: 3px;
         }
 
         .signoff-row {
             display: flex;
             justify-content: space-between;
-            margin-top: 15px;
-            gap: 20px;
+            margin-top: 12px;
+            gap: 15px;
         }
 
         .signoff-field {
@@ -290,30 +274,30 @@
         }
 
         .signoff-field label {
-            font-size: 10px;
+            font-size: 9px;
             text-transform: uppercase;
             letter-spacing: 1px;
             color: #7A6B63;
-            margin-bottom: 4px;
+            margin-bottom: 3px;
             font-weight: 600;
         }
 
         .consent-intro {
-            font-size: 12px;
-            line-height: 1.6;
+            font-size: 11px;
+            line-height: 1.5;
             color: #4A4440;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
         }
 
         .consent-intro input {
             border: none;
             border-bottom: 1px solid #D8CFC7;
             background: transparent;
-            font-size: 12px;
+            font-size: 11px;
             padding: 1px 3px;
             font-family: 'Montserrat', sans-serif;
             color: #332F2C;
-            width: 150px;
+            width: 130px;
         }
 
         .consent-intro strong {
@@ -323,31 +307,32 @@
         .consent-statement-list {
             display: flex;
             flex-direction: column;
-            gap: 10px;
-            margin-bottom: 15px;
+            gap: 8px;
+            margin-bottom: 12px;
+            flex-grow: 1;
         }
 
         .consent-item {
             display: flex;
             align-items: flex-start;
-            font-size: 11px;
-            line-height: 1.5;
+            font-size: 10px;
+            line-height: 1.4;
             color: #4A4440;
-            gap: 10px;
+            gap: 8px;
         }
 
         .initial-box {
-            width: 35px;
-            height: 18px;
+            width: 30px;
+            height: 16px;
             border: none;
             border-bottom: 1px solid #C5A059;
             flex-shrink: 0;
             text-align: center;
-            font-size: 9px;
+            font-size: 8px;
             color: #8A7A71;
             background-color: #FAF9F7;
             font-family: 'Montserrat', sans-serif;
-            padding: 2px;
+            padding: 1px;
         }
 
         .consent-text {
@@ -362,21 +347,17 @@
 
             body {
                 background-color: white;
-                margin: 0;
                 padding: 0;
             }
 
             .pages-container {
-                display: block;
                 margin: 0;
-                padding: 0;
                 max-width: 100%;
-                background: white;
             }
 
             .page {
-                width: 100%;
-                height: 100%;
+                width: 8.5in;
+                height: 11in;
                 margin: 0;
                 box-shadow: none;
                 page-break-after: always;
@@ -387,37 +368,6 @@
                 page-break-after: auto;
             }
         }
-
-        @media (max-width: 900px) {
-            .print-button {
-                position: static;
-                margin: 20px auto;
-                display: block;
-            }
-
-            .pages-container {
-                margin: 20px auto;
-            }
-
-            .page {
-                width: 100%;
-                max-width: 800px;
-                height: auto;
-                min-height: 1000px;
-            }
-
-            .form-content {
-                padding: 20px;
-            }
-
-            .matrix-container {
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .input-grid {
-                grid-template-columns: 1fr;
-            }
-        }
     </style>
 </head>
 <body>
@@ -425,7 +375,7 @@
     <button class="print-button" onclick="window.print()">🖨️ PRINT</button>
 
     <div class="pages-container">
-        <!-- PAGE 1: INTAKE FORM -->
+        <!-- PAGE 1 -->
         <div class="page">
             <div class="brand-header">
                 <div class="logo-main">RMN</div>
@@ -461,16 +411,12 @@
                         <label>Emergency Contact</label>
                         <input type="text" class="line-input">
                     </div>
-                    <div class="input-field">
-                        <label>Emergency Phone</label>
-                        <input type="tel" class="line-input">
-                    </div>
                 </div>
 
                 <div class="section-divider"></div>
 
                 <h2 class="section-title">Medical History</h2>
-                <p class="section-subtitle">Please mark any of the following conditions you may currently have:</p>
+                <p class="section-subtitle">Mark any conditions you currently have:</p>
 
                 <div class="matrix-container">
                     <label class="checkbox-item"><input type="checkbox"> Keloid Scars</label>
@@ -478,11 +424,11 @@
                     <label class="checkbox-item"><input type="checkbox"> Pacemaker</label>
                     <label class="checkbox-item"><input type="checkbox"> HIV</label>
                     <label class="checkbox-item"><input type="checkbox"> Accutane</label>
-                    <label class="checkbox-item"><input type="checkbox"> Phlebitis/Veins</label>
-                    <label class="checkbox-item"><input type="checkbox"> Scars Heal Dark</label>
+                    <label class="checkbox-item"><input type="checkbox"> Phlebitis</label>
+                    <label class="checkbox-item"><input type="checkbox"> Scars Dark</label>
                     <label class="checkbox-item"><input type="checkbox"> Tan</label>
                     <label class="checkbox-item"><input type="checkbox"> Recent Injury</label>
-                    <label class="checkbox-item"><input type="checkbox"> Eczema/Psoriasis</label>
+                    <label class="checkbox-item"><input type="checkbox"> Eczema</label>
                     <label class="checkbox-item"><input type="checkbox"> Epilepsy</label>
                     <label class="checkbox-item"><input type="checkbox"> Recent Surgery</label>
                     <label class="checkbox-item"><input type="checkbox"> Oily Skin</label>
@@ -490,37 +436,25 @@
                     <label class="checkbox-item"><input type="checkbox"> Rosacea</label>
                     <label class="checkbox-item"><input type="checkbox"> Diabetes</label>
                     <label class="checkbox-item"><input type="checkbox"> Heart Condition</label>
-                    <label class="checkbox-item"><input type="checkbox"> Retin-A/Retinol</label>
+                    <label class="checkbox-item"><input type="checkbox"> Retin-A</label>
                     <label class="checkbox-item"><input type="checkbox"> Cancer</label>
                     <label class="checkbox-item"><input type="checkbox"> Chemical Peel</label>
                     <label class="checkbox-item"><input type="checkbox"> Skin Lesions</label>
                     <label class="checkbox-item"><input type="checkbox"> Hepatitis</label>
                     <label class="checkbox-item"><input type="checkbox"> Pregnant</label>
-                    <label class="checkbox-item"><input type="checkbox"> Stage III Acne</label>
+                    <label class="checkbox-item"><input type="checkbox"> Acne Stage III</label>
                     <label class="checkbox-item"><input type="checkbox"> Hypoglycemic</label>
                     <label class="checkbox-item"><input type="checkbox"> Allergic</label>
-                    <label class="checkbox-item"><input type="checkbox"> Bleaching Agent</label>
+                    <label class="checkbox-item"><input type="checkbox"> Bleaching</label>
                     <label class="checkbox-item"><input type="checkbox"> Blood Thinners</label>
                     <label class="checkbox-item"><input type="checkbox"> Med Allergies</label>
                     <label class="checkbox-item"><input type="checkbox"> Sunburn</label>
                     <label class="checkbox-item"><input type="checkbox"> Lupus</label>
-                    <label class="checkbox-item"><input type="checkbox"> Using Retinol</label>
-                    <label class="checkbox-item"><input type="checkbox"> Swollen Tonsils</label>
-                    <label class="checkbox-item"><input type="checkbox"> Autoimmune</label>
-                    <label class="checkbox-item"><input type="checkbox"> Botox</label>
-                    <label class="checkbox-item"><input type="checkbox"> Thyroid</label>
-                    <label class="checkbox-item"><input type="checkbox"> Type I Diabetic</label>
-                    <label class="checkbox-item"><input type="checkbox"> Viral Infection</label>
-                    <label class="checkbox-item"><input type="checkbox"> Medical Care</label>
+                    <label class="checkbox-item"><input type="checkbox"> Retinol/Acid</label>
                 </div>
 
                 <div class="text-block-field">
-                    <label>Any Other Disorder Not Listed?</label>
-                    <textarea class="block-input"></textarea>
-                </div>
-
-                <div class="text-block-field">
-                    <label>Medication List:</label>
+                    <label>Other Disorders / Medications:</label>
                     <textarea class="block-input"></textarea>
                 </div>
 
@@ -541,7 +475,7 @@
             </div>
         </div>
 
-        <!-- PAGE 2: INFORMED CONSENT -->
+        <!-- PAGE 2 -->
         <div class="page">
             <div class="brand-header">
                 <div class="logo-main">RMN</div>
@@ -553,75 +487,70 @@
                 <h1 class="form-title">Informed Consent</h1>
 
                 <div class="consent-intro">
-                    I, <input type="text" placeholder="Name">, authorize <input type="text" placeholder="Esthetician"> to perform the procedure.
-                    <br><br>
-                    <strong>Please read and initial each statement:</strong>
+                    I, <input type="text" placeholder="Name">, authorize <input type="text" placeholder="Esthetician"> to perform treatment.
+                    <br><strong>Initial each statement:</strong>
                 </div>
 
                 <div class="consent-statement-list">
                     <div class="consent-item">
-                        <input type="text" class="initial-box" placeholder="">
-                        <div class="consent-text">I have completed this form to the best of my ability and agree to inform the technician of any changes.</div>
+                        <input type="text" class="initial-box">
+                        <div class="consent-text">I completed this form accurately and will inform technician of any changes.</div>
                     </div>
                     <div class="consent-item">
-                        <input type="text" class="initial-box" placeholder="">
-                        <div class="consent-text">I understand the contraindications and agree I don't have conditions that would make treatment unsuitable.</div>
+                        <input type="text" class="initial-box">
+                        <div class="consent-text">I understand contraindications and have no conditions making treatment unsuitable.</div>
                     </div>
                     <div class="consent-item">
-                        <input type="text" class="initial-box" placeholder="">
-                        <div class="consent-text">I will inform the technician of any discomfort during treatment.</div>
+                        <input type="text" class="initial-box">
+                        <div class="consent-text">I will inform technician of any discomfort during treatment.</div>
                     </div>
                     <div class="consent-item">
-                        <input type="text" class="initial-box" placeholder="">
-                        <div class="consent-text">I waive all liabilities for any injury due to misrepresentation of my health history.</div>
+                        <input type="text" class="initial-box">
+                        <div class="consent-text">I waive liabilities for injury from misrepresentation of health history.</div>
                     </div>
                     <div class="consent-item">
-                        <input type="text" class="initial-box" placeholder="">
-                        <div class="consent-text">I acknowledge I may experience scratchy/stinging sensation that fades during post-treatment.</div>
+                        <input type="text" class="initial-box">
+                        <div class="consent-text">I may experience scratchy/stinging sensation that fades post-treatment.</div>
                     </div>
                     <div class="consent-item">
-                        <input type="text" class="initial-box" placeholder="">
-                        <div class="consent-text">I acknowledge acne may temporarily look worse but will improve after successive treatments.</div>
+                        <input type="text" class="initial-box">
+                        <div class="consent-text">Acne may temporarily worsen but improves after successive treatments.</div>
                     </div>
                     <div class="consent-item">
-                        <input type="text" class="initial-box" placeholder="">
-                        <div class="consent-text">I acknowledge I must use sunscreen and limit exercise for 24 hours after treatment.</div>
+                        <input type="text" class="initial-box">
+                        <div class="consent-text">I must use sunscreen and limit exercise for 24 hours after treatment.</div>
                     </div>
                     <div class="consent-item">
-                        <input type="text" class="initial-box" placeholder="">
-                        <div class="consent-text">I acknowledge I have not been on Accutane for the past six months.</div>
+                        <input type="text" class="initial-box">
+                        <div class="consent-text">I have not been on Accutane for the past six months.</div>
                     </div>
                     <div class="consent-item">
-                        <input type="text" class="initial-box" placeholder="">
-                        <div class="consent-text">I acknowledge I have not been using Retin-A for the past two weeks.</div>
+                        <input type="text" class="initial-box">
+                        <div class="consent-text">I have not used Retin-A for the past two weeks.</div>
                     </div>
                     <div class="consent-item">
-                        <input type="text" class="initial-box" placeholder="">
-                        <div class="consent-text">I acknowledge facial blood vessels may be more apparent immediately after treatment.</div>
+                        <input type="text" class="initial-box">
+                        <div class="consent-text">Facial blood vessels may be apparent immediately after treatment.</div>
                     </div>
                     <div class="consent-item">
-                        <input type="text" class="initial-box" placeholder="">
-                        <div class="consent-text">I will remove my contact lenses prior to the procedure.</div>
+                        <input type="text" class="initial-box">
+                        <div class="consent-text">I will remove contact lenses prior to procedure.</div>
                     </div>
                     <div class="consent-item">
-                        <input type="text" class="initial-box" placeholder="">
-                        <div class="consent-text">I acknowledge I may need a prescription for cold sores if prone to herpes.</div>
+                        <input type="text" class="initial-box">
+                        <div class="consent-text">I will seek prescription for cold sores if prone to herpes.</div>
                     </div>
                     <div class="consent-item">
-                        <input type="text" class="initial-box" placeholder="">
-                        <div class="consent-text">I acknowledge my esthetician uses disinfected or disposable tools.</div>
+                        <input type="text" class="initial-box">
+                        <div class="consent-text">Esthetician uses disinfected or disposable tools.</div>
                     </div>
                     <div class="consent-item">
-                        <input type="text" class="initial-box" placeholder="">
-                        <div class="consent-text">I acknowledge my skin may experience temporary tightness, redness, or swelling.</div>
+                        <input type="text" class="initial-box">
+                        <div class="consent-text">My skin may experience temporary tightness, redness, or swelling.</div>
                     </div>
                     <div class="consent-item">
-                        <input type="text" class="initial-box" placeholder="">
-                        <div class="consent-text">I acknowledge the treatment does not require topical anesthesia.</div>
-                    </div>
-                    <div class="consent-item">
-                        <input type="text" class="initial-box" placeholder="">
-                        <div class="consent-text">I acknowledge initial treatment shows improvement, increasing after successive treatments.</div>
+                        <input type="text" class="initial-box">
+                        <div class="consent-text">Treatment does not require topical anesthesia.</div>
                     </div>
                 </div>
 
@@ -634,7 +563,7 @@
                         <label>Signature</label>
                         <input type="text" class="line-input">
                     </div>
-                    <div class="signoff-field" style="flex: 0.5;">
+                    <div class="signoff-field" style="flex: 0.6;">
                         <label>Date</label>
                         <input type="date" class="line-input">
                     </div>
@@ -648,7 +577,6 @@
     </div>
 
     <script>
-        // Set today's date on page load
         document.addEventListener('DOMContentLoaded', function() {
             const dateInputs = document.querySelectorAll('input[type="date"]');
             const today = new Date().toISOString().split('T')[0];
